@@ -1,4 +1,4 @@
-# SQL-Functions
+## SQL-Functions
 Expand your knowledge and skills in using SQL functions
 
 A SQL resource for anyone who works with SQL. Offering a comprehensive collection of SQL functions and their usage examples. An ideal reference for SQL developers and data analysts of all levels of experience. You can find a wide range of functions that can be used in various SQL applications. The repository is continuously updated.
