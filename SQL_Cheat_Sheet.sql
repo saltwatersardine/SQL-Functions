@@ -60,34 +60,28 @@ WHERE id IN (
     FROM orders
     WHERE order_total > 100);
 
--- 16. Create an index
-CREATE INDEX idx_users_username ON users (username);
-
--- 17. Drop an index
-DROP INDEX idx_users_username ON users;
-
--- 18. Select distinct values from a column
+-- 16. Select distinct values from a column
 SELECT DISTINCT country FROM users;
 
--- 19. Count the number of distinct values in a column
+-- 17. Count the number of distinct values in a column
 SELECT COUNT(DISTINCT country) FROM users;
 
--- 12. Limit the number of rows returned
+-- 18. Limit the number of rows returned
 SELECT * FROM users LIMIT 10;
 
--- 21. Select rows using pattern matching with LIKE
+-- 19. Select rows using pattern matching with LIKE
 SELECT * FROM users WHERE username LIKE 'j%';
 
--- 22. Select rows using multiple conditions with AND
+-- 20. Select rows using multiple conditions with AND
 SELECT * FROM users WHERE country = 'USA' AND age > 18;
 
--- 23. Select rows using multiple conditions with OR
+-- 21. Select rows using multiple conditions with OR
 SELECT * FROM users WHERE country = 'USA' OR country = 'Canada';
 
--- 24. Use aggregate functions to summarize data (AVG, SUM, MIN, MAX)
+-- 22. Use aggregate functions to summarize data (AVG, SUM, MIN, MAX)
 SELECT AVG(age), SUM(age), MIN(age), MAX(age) FROM users;
 
--- 25. Group rows, apply aggregation functions, and filter using HAVING
+-- 23. Group rows, apply aggregation functions, and filter using HAVING
 SELECT country, COUNT(*)
 FROM users
 GROUP BY country
